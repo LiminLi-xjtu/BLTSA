@@ -1,6 +1,6 @@
 # use Dimensionality.R to reduce the dimensionality
 
-data <- R.matlab::readMat('C:\\Users\\pc\\Desktop\\sim\\sim3.mat')
+data <- R.matlab::readMat('sim3.mat')
 X <- data$sim
 X <- data.frame(dim1=X[,1],dim2=X[,2])
 
