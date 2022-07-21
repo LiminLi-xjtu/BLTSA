@@ -1,6 +1,6 @@
 # use Dimensionality.R to reduce the dimensionality
 
-data <- R.matlab::readMat('C:\\Users\\pc\\Desktop\\sim\\sim1.mat')
+data <- R.matlab::readMat('sim1.mat')
 # data after dimensionality reduction
 X <- data$sim.DiffusionMap
 X <- data.frame(dim1=X[,1],dim2=X[,2])
