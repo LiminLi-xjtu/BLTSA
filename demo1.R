@@ -1,3 +1,9 @@
+library(FNN)
+library(Matrix)
+library(igraph)
+library(igraph)
+library(ggplot2)
+
 # use Dimensionality.R to reduce the dimensionality
 
 data <- R.matlab::readMat('sim1.mat')
