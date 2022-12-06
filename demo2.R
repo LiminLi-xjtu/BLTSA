@@ -8,7 +8,7 @@ library(ggplot2)
 
 data <- R.matlab::readMat('sim2.mat')
 # data after dimensionality reduction
-X <- data$sim.DiffusionMap
+X <- data$DiffusionMap
 X <- data.frame(dim1=X[,1],dim2=X[,2])
 
 # calculate labels
