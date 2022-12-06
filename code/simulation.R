@@ -10,8 +10,8 @@ a<-function (C = 100, G = 40, p_transient = 0, zero_negative = TRUE,
              model_dropout = FALSE, lambda = 1) 
 {
   branch <- rbinom(C, 1, 0.5)
-  gsd <- sqrt(1/rgamma(G, 2, 2))
-  #gsd <- rpois(G,3)
+  gsd <- 2*1/rgamma(G, 2, 2)
+  #gsd <- 1.5*rpois(G,3)
   k <- replicate(2, runif(G, 5, 10) * sample(c(-1, 1), G, replace = TRUE))
   phi <- replicate(2, runif(G, 5, 10))
   delta <- replicate(2, runif(G, 0.5, 1))
