@@ -1,8 +1,8 @@
 library(FNN)
 library(Matrix)
 library(igraph)
-library(igraph)
 library(ggplot2)
+library(RSpectra)
 
 # use Dimensionality.R to reduce the dimensionality
 
